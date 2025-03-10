@@ -18,7 +18,7 @@
   <div class="card">
     <h2 id="card-title"></h2>
     <p id="card-description"></p>
-    <p id="card-example"></p>
+    <p><strong>Beispiel:</strong> <span id="card-example"></span></p>
     <p><strong>Merkfrage:</strong> <span id="card-question"></span></p>
     <div class="buttons">
       <button class="button" onclick="prevCard()" id="prev-btn">Zurück</button>
@@ -126,7 +126,7 @@
       const card = cards[index];
       document.getElementById('card-title').innerText = card.name;
       document.getElementById('card-description').innerText = card.description;
-      document.getElementById('card-example').innerText = `Beispiel: ${card.example}`;
+      document.getElementById('card-example').innerText = card.example;
       document.getElementById('card-question').innerText = card.question;
       document.getElementById('prev-btn').disabled = index === 0;
       document.getElementById('next-btn').disabled = index === cards.length - 1;
