@@ -28,9 +28,97 @@
 
   <script>
         const cards = [
-      { name: "Bestätigungsfehler", description: "Die Tendenz, Informationen bevorzugt wahrzunehmen ...", example: "Du liest nur Artikel, die ...", question: "Suche ich aktiv auch nach Meinungen ...?" },
-      { name: "Ankereffekt", description: "Entscheidungen werden stark von einem zuerst ...", example: "Der Verkäufer nennt zuerst einen hohen Preis ...", question: "Lasse ich mich von einer zuerst gehörten Zahl ...?" }
-    ];
+    {
+      "name": "Bestätigungsfehler (Confirmation Bias)",
+      "description": "Die Tendenz, Informationen bevorzugt wahrzunehmen und zu interpretieren, die die eigenen Überzeugungen bestätigen, während widersprüchliche Informationen ignoriert werden.",
+      "example": "Du bist überzeugt, dass dein Lieblingsfußballteam das Beste ist. Also liest du nur Artikel, die das bestätigen, und ignorierst kritische Berichte.",
+      "question": "Suche ich aktiv auch nach Meinungen oder Daten, die meinen Standpunkt in Frage stellen könnten?"
+    },
+    {
+      "name": "Ankereffekt (Anchoring Effect)",
+      "description": "Entscheidungen werden stark von einem zuerst präsentierten Wert oder einer Information (dem \"Anker\") beeinflusst, auch wenn dieser Anker zufällig oder irrelevant ist.",
+      "example": "Du verhandelst über den Preis eines Autos. Der Verkäufer nennt zuerst einen extrem hohen Preis – plötzlich erscheint ein nur leicht reduzierter Preis als Schnäppchen, obwohl er immer noch zu hoch ist.",
+      "question": "Lasse ich mich von einer zuerst gehörten Zahl oder Information übermäßig beeinflussen?"
+    },
+    {
+      "name": "Verfügbarkeitsheuristik (Availability Heuristic)",
+      "description": "Menschen schätzen Wahrscheinlichkeiten basierend auf der Leichtigkeit, mit der Beispiele aus dem Gedächtnis abgerufen werden können.",
+      "example": "Nach dem Anschauen einer Flugzeugkatastrophendoku glaubst du, Flugzeugreisen seien gefährlicher als Autofahren – obwohl Statistiken das Gegenteil beweisen.",
+      "question": "Bewerte ich ein Risiko nur, weil mir ein einprägsames Beispiel einfällt, oder habe ich objektive Daten dazu?"
+    },
+    {
+      "name": "Verlustaversion (Loss Aversion)",
+      "description": "Verluste werden psychologisch stärker gewichtet als gleich hohe Gewinne.",
+      "example": "Du hältst an einem schlecht laufenden Investment fest, nur weil du den bisherigen Verlust nicht realisieren willst.",
+      "question": "Halte ich an etwas fest, nur weil ich Angst vor einem Verlust habe, selbst wenn es rational sinnvoll wäre, loszulassen?"
+    },
+    {
+      "name": "Dunning-Kruger-Effekt",
+      "description": "Personen mit geringem Fachwissen neigen dazu, ihre eigenen Fähigkeiten zu überschätzen.",
+      "example": "Nach einer YouTube-Anleitung fühlst du dich bereit, dein Badezimmer selbst zu fliesen – ohne echte Erfahrung.",
+      "question": "Habe ich genug Wissen und Erfahrung, um mir sicher zu sein, dass ich wirklich kompetent bin?"
+    },
+    {
+      "name": "Repräsentativitätsheuristik (Representativeness Heuristic)",
+      "description": "Menschen beurteilen Wahrscheinlichkeiten danach, wie sehr ein Beispiel einem Prototyp entspricht, und vernachlässigen oft statistische Grundlagen.",
+      "example": "Du triffst jemanden mit Brille und Pulli und schließt sofort darauf, dass er ein IT-Spezialist sein muss – obwohl das gar nichts beweist.",
+      "question": "Beurteile ich eine Situation nur auf Basis von Stereotypen oder habe ich echte Belege?"
+    },
+    {
+      "name": "Überoptimismus (Overconfidence Bias)",
+      "description": "Viele Menschen überschätzen ihre eigenen Fähigkeiten oder die Genauigkeit ihrer Urteile.",
+      "example": "Du glaubst, du kannst eine Prüfung ohne Lernen bestehen, weil du dich für besonders klug hältst – und wirst dann enttäuscht.",
+      "question": "Bin ich mir zu sicher, ohne ausreichende Vorbereitung oder Faktenbasis?"
+    },
+    {
+      "name": "Framing-Effekt (Framing Effect)",
+      "description": "Die Art, wie Informationen präsentiert werden, beeinflusst stark die Entscheidungsfindung.",
+      "example": "Ein Joghurt mit \"90 % fettfrei\" klingt gesünder als einer mit \"10 % Fett\", obwohl es dasselbe Produkt ist.",
+      "question": "Lasse ich mich von der Formulierung einer Information leiten, anstatt auf die Fakten zu achten?"
+    },
+    {
+      "name": "Status-quo-Verzerrung (Status Quo Bias)",
+      "description": "Die Tendenz, den aktuellen Zustand beizubehalten, auch wenn Alternativen objektiv vorteilhafter wären.",
+      "example": "Du bleibst in einem langweiligen Job, nur weil du Angst vor Veränderungen hast.",
+      "question": "Bevorzuge ich etwas nur, weil es vertraut ist, nicht weil es die beste Option ist?"
+    },
+    {
+      "name": "Halo-Effekt",
+      "description": "Ein einzelnes positives Merkmal beeinflusst die Gesamtbeurteilung einer Person oder Sache.",
+      "example": "Du hältst einen attraktiven Kollegen automatisch für kompetenter, obwohl es keinen Zusammenhang gibt.",
+      "question": "Lasse ich mich von einem auffälligen Merkmal zu stark beeinflussen?"
+    },
+    {
+      "name": "Selbstwertdienliche Verzerrung (Self-serving Bias)",
+      "description": "Erfolge werden den eigenen Fähigkeiten zugeschrieben, Misserfolge äußeren Umständen.",
+      "example": "Wenn du gewinnst, liegt es an deinem Talent – wenn du verlierst, war das Wetter schuld.",
+      "question": "Bin ich ehrlich zu mir, wenn es um den Grund für Erfolg oder Misserfolg geht?"
+    },
+    {
+      "name": "Planungsfehlschluss (Planning Fallacy)",
+      "description": "Menschen unterschätzen oft den Zeit- und Kostenaufwand für Projekte.",
+      "example": "Du planst einen Umzug in einem Tag und brauchst am Ende ein ganzes Wochenende.",
+      "question": "Habe ich genug Pufferzeit eingeplant, oder bin ich zu optimistisch?"
+    },
+    {
+      "name": "Sunk Cost Fallacy (Kostenillusion)",
+      "description": "Bereits getätigte Investitionen führen dazu, dass man weiter an einer schlechten Entscheidung festhält.",
+      "example": "Du schaust einen furchtbar langweiligen Film bis zum Ende, nur weil du fürs Ticket bezahlt hast.",
+      "question": "Treffe ich diese Entscheidung nur, weil ich schon so viel investiert habe?"
+    },
+    {
+      "name": "Optimismus-Verzerrung (Optimism Bias)",
+      "description": "Menschen bewerten zukünftige Ereignisse oft positiver, als es realistisch ist.",
+      "example": "Du schließt keine Versicherung ab, weil du glaubst, dir wird schon nichts passieren.",
+      "question": "Bewerte ich meine Chancen realistisch oder zu optimistisch?"
+    },
+    {
+      "name": "Rückschaufehler (Hindsight Bias)",
+      "description": "Nach einem Ereignis erscheint das Ergebnis oft als vorhersehbar, obwohl es das nicht war.",
+      "example": "Nach einem Börsencrash sagst du: \"Das war ja klar, dass das passiert!\" – obwohl du es vorher nicht kommen sahst.",
+      "question": "Erscheint mir ein Ergebnis nur deshalb offensichtlich, weil ich es jetzt schon kenne?"
+    }
+  ];
 
     let currentIndex = 0;
 
